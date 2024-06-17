@@ -19,7 +19,7 @@ async function Dashboard() {
     size: doc.data().size,
   }));
 
-  console.log(skeletonFiles);
+  // console.log(skeletonFiles);
 
   return (
     <div>
