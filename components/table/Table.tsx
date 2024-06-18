@@ -19,6 +19,8 @@ import { FileType } from '@/typings';
 import { Button } from '../ui/button';
 import { PencilIcon, TrashIcon } from 'lucide-react';
 import { useAppStore } from '@/store/store';
+import DeleteModal from '../DeleteModal';
+import RenameModal from '../RenameModal';
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -45,6 +47,7 @@ export function DataTable<TData, TValue>({
 
   const openDeleteModal = (fileId: string) => {
     setFileId(fileId);
+    setIsDeleteModalOpen(true);
   };
 
   const openRenameModal = (fileId: string, filename: string) => {
@@ -55,6 +58,8 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className='rounded-md border'>
+      <DeleteModal />
+      <RenameModal />
       <Table>
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
