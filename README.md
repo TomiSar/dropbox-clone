@@ -1,3 +1,11 @@
+# ReactJs Dropbox clone application
+
+This app is dropbox clone application made with NextJS
+
+## Deployed application
+
+- https://dropbox-clone-sand.vercel.app/
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
