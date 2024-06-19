@@ -10,8 +10,9 @@ function Header() {
         <div className='bg-[#0160FE] w-fit'>
           <Image
             className='bg-white'
-            height={50}
-            width={50}
+            height={45}
+            width={45}
+            style={{ borderRadius: '10px' }}
             src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Dropbox_Icon.svg/2202px-Dropbox_Icon.svg.png'
             alt='logo'
           />

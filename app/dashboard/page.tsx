@@ -19,13 +19,11 @@ async function Dashboard() {
     size: doc.data().size,
   }));
 
-  // console.log(skeletonFiles);
-
   return (
     <div>
       <Dropzone />
       <section className='container space-y-5'>
-        <h2 className='font-bold'>All Files</h2>
+        <h2 className='font-bold'>Your uploaded files</h2>
         <div>
           {/* Table Wrapper */}
           <TableWrapper skeletonFiles={skeletonFiles} />

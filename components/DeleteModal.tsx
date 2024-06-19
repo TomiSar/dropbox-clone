@@ -38,7 +38,7 @@ function DeleteModal() {
         .then(async () => {
           // Alert
           deleteDoc(doc(db, 'users', user.id, 'files', fileId)).then(() => {
-            toast.success('File deleted', {
+            toast.success('File deleted successfully', {
               id: toastId,
             });
           });

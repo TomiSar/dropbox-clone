@@ -36,7 +36,7 @@ function Dropzone() {
     if (loading) return;
     if (!user) return;
     setLoading(true);
-    const toastId = toast.loading('Uploading file...');
+    const toastId = toast.loading('Uploading file');
 
     // addDoc -> users/user1231/files
     const docRef = await addDoc(collection(db, 'users', user.id, 'files'), {
@@ -59,7 +59,7 @@ function Dropzone() {
       });
     });
 
-    toast.success('File Uploaded!', {
+    toast.success('File Uploaded successfully', {
       id: toastId,
       position: 'bottom-center',
     });

@@ -38,7 +38,7 @@ function RenameModal() {
       filename: input,
     });
 
-    toast.success('File was renamed with success', {
+    toast.success('File renamed successfully', {
       id: toastId,
     });
     setInput('');
