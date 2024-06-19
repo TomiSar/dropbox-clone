@@ -44,7 +44,7 @@ export default function Home() {
         This video is made for informational and educational purposes only. We
         do nto affiliate with Dropbox or any of its subsidiaries in any form.
         Copyright disclaimer under section 107 of the Copyright Act 1976,
-        allowance is made for "fair use" of this video for education purposes.
+        allowance is made for fair use of this video for education purposes.
       </p>
     </main>
   );
